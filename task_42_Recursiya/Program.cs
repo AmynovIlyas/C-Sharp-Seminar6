@@ -17,7 +17,7 @@ string ToBinary(int num)
         result += (num % 2).ToString();
         num /= 2;
     }
-    return ToBinary(result); 
+    return result; 
 }
 
 

@@ -13,6 +13,16 @@ int Prompt()
 
 void Fibonachi(int num)
 {
+    if(num <= 0)
+    {
+        Console.Write("нет значений");
+    }
+    else if (num == 1)
+    {
+        Console.Write(0);
+    }
+    else
+    {
     int[] array = new int[num];
     array[0] = 0;
     array[1] = 1;
@@ -21,6 +31,7 @@ void Fibonachi(int num)
         array[i] = array[i-1] + array[i-2];
     } 
     Console.Write($"{String.Join(" ", array)}");
+    }
 }
 
 int number = Prompt();
